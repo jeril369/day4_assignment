@@ -1,0 +1,30 @@
+<p>district-pages works!</p>
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col" *ngFor="let keralatourism of database">
+
+            <div class="container text-center" >
+
+        <div class="card" style="width: 18rem;">
+
+            <img src="{{keralatourism.image}}" class="card-img-top" alt="...">
+
+            <div class="card-body">
+
+              <h5 class="card-title">{{keralatourism.District}}</h5>
+
+              <p class="card-text">{{keralatourism.description}}</p>
+
+              <a (click)="gotoHere(keralatourism.District)" class="btn btn-primary">for more</a>
+
+            </div>
+
+          </div>
+
+    </div>
+
+    </div>
+
+    </div>
